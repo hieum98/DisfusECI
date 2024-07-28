@@ -1,0 +1,62 @@
+Dataset: Causal-TB (Intra: True, Inter: True) 
+Random_state: 1741
+Hyperparams: 
+ dict_items([('num_epochs', 50), ('encoder_warm_up', 5), ('block_type', 'in-context'), ('diff_depth', 2), ('diff_lr', 3e-05), ('encoder_lr', 8e-06), ('head_lr', 3e-05)])
+F1: 0.7017543859649122  
+P: 0.8 
+R: 0.625 
+-------------------- 
+
+Dataset: ESL (Intra: False, Inter: True) 
+Random_state: 1741
+Hyperparams: 
+ Namespace(data_name='ESL', inter=True, intra=False, batch_size=16, label_max_len=16, model_name='roberta-large', block_type='in-context', diff_depth=6, use_diffusion=False, diff_lr=8e-05, encoder_lr=3e-06, head_lr=1e-05, diffusion_train_step=1000, diffusion_inference_step=100, num_epochs=20, encoder_warm_up=5, gradient_accumulation_steps=1, config_file='/disk/hieu/IE/DiffusIE/config.ini', output_dir='/disk/hieu/IE/DiffusIE/experiments', hf_cache='/disk/hieu/IE/hf_cache', cache='/disk/hieu/IE/DiffusIE/cache', devices=[3], tuning=False, training=True, testing=False, load_checkpoint=None, datasets='ESL', seed=1741, n_fold=5, num_labels=3)
+F1: 0.6078661860444206  
+P: 0.6191770849177515 
+R: 0.5990105136628616 
+-------------------- 
+
+Dataset: ESL (Intra: True, Inter: False) 
+Random_state: 1741
+Hyperparams: 
+ dict_items([('num_epochs', 50), ('encoder_warm_up', 1), ('diffusion_train_step', 1000), ('diffusion_inference_step', 200), ('block_type', 'adaLN-Zero'), ('diff_depth', 4), ('diff_lr', 8e-05), ('encoder_lr', 8e-06), ('head_lr', 0.0001)])
+F1: 0.7141292442497262  
+P: 0.6533066132264529 
+R: 0.7874396135265701 
+-------------------- 
+
+Dataset: ESL (Intra: True, Inter: True) 
+Random_state: 1741
+Hyperparams: 
+ dict_items([('num_epochs', 30), ('encoder_warm_up', 5), ('diffusion_train_step', 1000), ('diffusion_inference_step', 100), ('block_type', 'in-context'), ('diff_depth', 2), ('diff_lr', 5e-05), ('encoder_lr', 3e-06), ('head_lr', 5e-05)])
+F1: 0.6356895699456253  
+P: 0.6303921568627451 
+R: 0.6410767696909272 
+-------------------- 
+
+Dataset: MECI-en (Intra: True, Inter: True) 
+Random_state: 1741
+Hyperparams: 
+ dict_items([('num_epochs', 50), ('encoder_warm_up', 10), ('diff_depth', 2), ('diff_lr', 1e-06), ('encoder_lr', 7e-06), ('head_lr', 5e-05)])
+F1: 0.7017744705208929  
+P: 0.7211764705882353 
+R: 0.6833890746934225 
+-------------------- 
+
+Dataset: MECI-da (Intra: True, Inter: True) 
+Random_state: 1741
+Hyperparams: 
+ dict_items([('num_epochs', 50), ('encoder_warm_up', 10), ('diff_depth', 6), ('diff_lr', 5e-06), ('encoder_lr', 7e-06), ('head_lr', 1e-05)])
+F1: 0.4742765273311897  
+P: 0.426917510853835 
+R: 0.5334538878842676 
+-------------------- 
+
+Dataset: MECI-tr (Intra: True, Inter: True) 
+Random_state: 1741
+Hyperparams: 
+ dict_items([('num_epochs', 20), ('encoder_warm_up', 3), ('block_type', 'adaLN-Zero'), ('diff_depth', 8), ('diff_lr', 3e-06), ('encoder_lr', 1e-05), ('head_lr', 5e-06)])
+F1: 0.5742369374030004  
+P: 0.6142778085224129 
+R: 0.5390966488586693 
+-------------------- 
